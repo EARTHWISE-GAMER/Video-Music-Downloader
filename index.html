@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embedded Widget</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.9/iframeResizer.min.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+    <title>Downloader Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            color: purple;
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+<body>
+<h1 style="color: blue;">Free Video & Music Downloader</h1>
+  <iframe
+    id="widgetApiIframe"
+    width="100%"
+    height="100%"
+    allowtransparency="true"
+    scrolling="no"
+    style="border: none"
+    src="https://p.oceansaver.in/api/widget?adUrl=https://myAdurl.com">
+  </iframe>
+
+  <script>
+    iFrameResize({
+      log: false
+    }, "#widgetApiIframe");
+  </script>
+
+</body>
+</html>
